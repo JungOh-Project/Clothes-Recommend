@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFF8DC">
+
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:layout_marginTop="10dp"
+        android:icon="@drawable/house"/>
+
+    <item
+        android:id="@+id/menu_addClothes"
+        android:title="Add Clothes"
+        android:layout_marginTop="10dp"
+        android:icon="@drawable/plus"/>
+
+    <item
+        android:id="@+id/menu_myPage"
+        android:title="My Page"
+        android:layout_marginTop="10dp"
+        android:icon="@drawable/person"/>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jung_oh">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="JungOh"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.jung_oh.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.jungoh.SplashActivity"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.jungoh.LoginActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.jungoh.MainActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.jungoh.AddClothesActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.jungoh.closet_card_view"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.jungoh.FindPasswordActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.jungoh.SignUpActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.jungoh.MyCloset"
+            android:theme="@style/MyTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/house"
+        android:background="#FFFFF8DC"/>
+
+    <item
+        android:id="@+id/menu_addClothes"
+        android:title="Add clothes"
+        android:icon="@drawable/plus"
+        android:background="#FFFFF8DC"/>
+
+    <item
+        android:id="@+id/menu_myPage"
+        android:title="My Page"
+        android:icon="@drawable/person"
+        android:background="#FFFFF8DC"/>
+
+</menu>
